@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Method - Sneaker Store</title>
+    <link rel="stylesheet" href="paymrnt.css" />
+    <script src="payment.js"></script>
+    <script
+    src="https://kit.fontawesome.com/cdb2f161c6.js"
+    crossorigin="anonymous"
+  ></script>
+
+  </head>
+
+  <body>
+
+
+    <button onclick="goback()"  id="backBtn" class="nav-btn"> &#8592;</button>
+
+    <div> <a href="Index.html" id="back-arrow" > <img src="pictures/back-to-back-removebg-preview.png" width="100px" alt="">
+    </a> </div>
+    
+    <!-- Payment Form -->
+    <div class="payment-container">
+        <h2 id="logo"> F<span>rank</span>S<span>neakers</span></h2>
+      <form action="#" method="POST">
+        <!-- Billing Information -->
+        <div class="section">
+          <h2>Order Information</h2>
+          <label for="fullname">Full Name</label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            
+            required
+          />
+
+          <label for="address">Address</label>
+          <input
+            type="text"
+            id="address"
+            name="address"
+            placeholder="1234 Main St"
+            required
+          />
+
+          <label for="city">City</label>
+          <input
+            type="text"
+            id="city"
+            name="city"
+            required
+          />
+
+          <label for="Phone Number">Phone Number</label>
+          <input
+            type="text"
+            id="Phone-Number"
+            name="Phone Number"
+          
+            required
+          />
+        </div>
+
+        <!-- Payment Details -->
+        <div class="section">
+          <h2>Payment Details</h2>
+          <label for="cardname">Name on Card</label>
+          <input
+            type="text"
+            id="cardname"
+            name="cardname"
+            required
+          />
+
+          <label for="cardnumber">Card Number</label>
+          <input
+            type="text"
+            id="cardnumber"
+            name="cardnumber"
+            placeholder="1111-2222-3333-4444"
+            required
+          />
+
+          <label for="expmonth">Expiration Month</label>
+          <input
+            type="text"
+            id="expmonth"
+            name="expmonth"
+            
+            required
+          />
+
+          <label for="expyear">Expiration Year</label>
+          <input
+            type="text"
+            id="expyear"
+            name="expyear"
+            
+            required
+          />
+
+          <label for="cvv">CVV</label>
+          <input type="text" id="cvv" name="cvv" placeholder="123" required />
+        </div>
+
+        <!-- Submit Button -->
+
+        <button type="submit" class="btn" id="make-payment" >Complete Purchase</button>
+        <div id="notification">Payment Successful!</div>
+
+      </form>
+
+    </div>
+  
+  </body>
+</html>
